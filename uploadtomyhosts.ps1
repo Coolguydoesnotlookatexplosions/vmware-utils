@@ -7,7 +7,7 @@ Upload a bunch of files or just one file to many hosts or just one host.
     PS C:\> <example usage>
     Explanation of what the example does
 .INPUTS
-    Inputs (if any) $myhosts= IPs or FQDNs of hosts
+    Inputs  $myhosts= IPs or FQDNs of hosts
 .OUTPUTS
     
 .NOTES
