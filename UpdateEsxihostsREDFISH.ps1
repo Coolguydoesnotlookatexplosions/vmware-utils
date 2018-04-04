@@ -17,11 +17,7 @@ Apply PerformanceOS to R740 for VMware specific profile to many hosts or just on
 www.FrankMarroquin.com @Frankrax
 #>
 
-#$esxlist = @("10.127.88.115","10.10.10.12", "20.10.10.12")
-$esxlist = @("10.10.77.205",
-"10.10.72.107",
-"10.10.77.210",
-"10.10.77.218")
+$esxlist = @("10.10.10.115","10.10.10.12", "20.10.10.12")
 $root = "root" 
 $Passwd = "calvincalvin"
 #Check if module is loaded
