@@ -1,4 +1,4 @@
-
+#in github the example ipcsv is called NEW_vmk_IPslist.csv
 $MyFile = Import-CSV ips.csv
 $wchosts = Get-VMHost -State connected | Sort-Object name
 $Westportgroup="Exnet-Prov_Backup_VLAN1027"
