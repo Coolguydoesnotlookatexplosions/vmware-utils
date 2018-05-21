@@ -1,0 +1,2 @@
+#I wanted to only change the MTU for vmk1
+Get-VMHost | Get-VMHostNetworkadapter -name vmk1 | | Set-VMHostnetworkadapter -Mtu 1500
