@@ -56,6 +56,7 @@ $dvportgroup = Get-VDPortgroup -Name $destinationprovisioningpg -VDSwitch $VS
 #$vmk = Get-VMHost $wchosts | Get-VMHostNetworkAdapter -VMKernel | ?{$_.Name -match "vmk4"}
 #$vmk = Get-VMHostNetworkAdapter -VMHost $wchosts | Where-Object{$_.Name -match "vmk4"}
 #Write-Host this is the vmk that is migrating $vmk
+NEED TO ADD A SLEEP HERE OF LIKE 10 SECONDS OTHERWISE YOU GET A MESSAGE THAT THE VMK WAS NOT FOUND
 #Set-VMHostNetworkAdapter -PortGroup $dvportgroup -VirtualNic (Get-VMHostNetworkAdapter -VMHost $currenthost | Where-Object{$_.Name -match "vmk4"}) -Confirm:$false | Out-Null
 Set-VMHostNetworkAdapter -PortGroup $dvportgroup -VirtualNic (Get-VMHostNetworkAdapter -VMHost $currenthost -Name "vmk4") -Confirm:$false | Out-Null
 
