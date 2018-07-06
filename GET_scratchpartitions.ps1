@@ -33,4 +33,14 @@ ScratchConfig.Con...                      VMHost
 OR
 -Name net*tcp*
 
+what's neat is to a | gm to get-members
+then can do a select to pick out those members you just looked up.
+PS C:\> $as = Get-AdvancedSetting -Entity $esx -Name *scratch* | Select type
+PS C:\> $as
+
+  Type
+  ----
+VMHost
+VMHost
+
 #>
