@@ -20,7 +20,7 @@ Get-Module -ListAvailable -Name VMware.PowerCLI
 $host.ui.RawUI.WindowTitle = "Now we are scripting"
 
 #Set starting directory
-cd \\jungle.aotx.ao.dcn\cloud\VDIProfiles$\FrankMarroquin\Documents\scripts
+cd \VDIProfiles$\FrankMarroquin\Documents\scripts
 
 $Shell = $Host.UI.RawUI
 $size = $Shell.WindowSize
