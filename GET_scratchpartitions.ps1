@@ -42,5 +42,7 @@ PS C:\> $as
   ----
 VMHost
 VMHost
+What are the N and E in the select?
+N is Name and E is Expression (you can also spell out Name and Expression). Specifying a hashtable as a parameter to Select-Object creates a calculated property. See help Select-Object for some examples
 
 #>
