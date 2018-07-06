@@ -16,9 +16,9 @@ $scratch="ScratchConfig.ConfiguredScratchLocation"
 &{foreach($esx in Get-VMHost){
   Get-AdvancedSetting -Entity $esx -Name $scratch |
   Select @{N="ESXi";E={$esx.Name}},Value
-}} | ConvertTo-Html | Out-File C:\temp\hbtvct14_report.html
+}} | ConvertTo-Html | Out-File C:\temp\vc14_report.html
 
-Invoke-Item c:\temp\hbtvct14_report.html
+Invoke-Item c:\temp\vc14_report.html
 <# 
 #if you want to search for stuff
 do something like this
