@@ -20,3 +20,16 @@ $scratch="ScratchConfig.ConfiguredScratchLocation"
 
 Invoke-Item c:\temp\hbtvct14_report.html
 
+#if you want to search for stuff
+do something like this
+PS C:\> $as = Get-AdvancedSetting -Entity $esx -Name *scratch*
+PS C:\> $as
+
+Name                 Value                Type                 Description
+----                 -----                ----                 -----------
+ScratchConfig.Cur... /tmp/scratch         VMHost
+ScratchConfig.Con...                      VMHost
+
+OR
+-Name net*tcp*
+
