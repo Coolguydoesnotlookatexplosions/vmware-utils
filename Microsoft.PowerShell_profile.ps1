@@ -33,6 +33,20 @@ $size.height=5000
 $Shell.BufferSize = $size
 
 #custom prompt
+<# you can add this to the function below to fancy it up more
+$curtime = Get-Date
+
+Write-Host -NoNewLine "p" -foregroundColor $foregroundColor
+Write-Host -NoNewLine "$" -foregroundColor Green
+Write-Host -NoNewLine "[" -foregroundColor Yellow
+Write-Host -NoNewLine ("{0:HH}:{0:mm}:{0:ss}" -f (Get-Date)) -foregroundColor $foregroundColor
+Write-Host -NoNewLine "]" -foregroundColor Yellow
+Write-Host -NoNewLine ">" -foregroundColor Red
+#this changes the title bar
+$host.UI.RawUI.WindowTitle = "PS >> User: $curUser >> Current DIR: $((Get-Location).Path)"
+
+Return " "
+#>
 Function Prompt 
 {
 
