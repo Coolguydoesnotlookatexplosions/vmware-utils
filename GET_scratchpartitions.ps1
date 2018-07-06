@@ -3,6 +3,15 @@
 #https://communities.vmware.com/thread/473438
 #put my own tweaks on it. just changing the directory 
 
+#learned about https://code.vmware.com/doc/preview?id=6330#/doc/Get-AdvancedSetting.html
+#availble contstants to look up from get-advancedsetting
+#ClusterHA
+#VM
+#ClusterDRS
+#VMHost
+#DatastoreClusterSdrs
+#VIServer
+
 $scratch="ScratchConfig.ConfiguredScratchLocation"
 &{foreach($esx in Get-VMHost){
   Get-AdvancedSetting -Entity $esx -Name $scratch |
@@ -11,4 +20,3 @@ $scratch="ScratchConfig.ConfiguredScratchLocation"
 
 Invoke-Item c:\temp\hbtvct14_report.html
 
-#learned about https://code.vmware.com/doc/preview?id=6330#/doc/Get-AdvancedSetting.html
