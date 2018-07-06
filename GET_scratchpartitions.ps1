@@ -45,4 +45,6 @@ VMHost
 What are the N and E in the select?
 N is Name and E is Expression (you can also spell out Name and Expression). Specifying a hashtable as a parameter to Select-Object creates a calculated property. See help Select-Object for some examples
 
-#>
+You are looking at the short hand for the keys of a calculated property. "N" is short for Name. "L" or Label is also used in place of Name. "E" of course is for Expression.
+They are used when you want to manipulate existing properties or as a simple way to add properties. It is by no means the only way.
+So for our report we are taking the NAME colume and renaming it to esxi and the expression is the name of each host#>
