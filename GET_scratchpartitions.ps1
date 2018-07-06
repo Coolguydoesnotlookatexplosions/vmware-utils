@@ -19,7 +19,7 @@ $scratch="ScratchConfig.ConfiguredScratchLocation"
 }} | ConvertTo-Html | Out-File C:\temp\hbtvct14_report.html
 
 Invoke-Item c:\temp\hbtvct14_report.html
-
+<# 
 #if you want to search for stuff
 do something like this
 PS C:\> $as = Get-AdvancedSetting -Entity $esx -Name *scratch*
@@ -33,3 +33,4 @@ ScratchConfig.Con...                      VMHost
 OR
 -Name net*tcp*
 
+#>
