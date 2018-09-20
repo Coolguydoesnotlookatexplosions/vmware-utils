@@ -2,7 +2,7 @@
 #updating script found in  https://kb.vmware.com/s/article/2107951 withget-esxcli -V2
 #could not get the vib install dryrun to work completely. didnt have a depot to run against. 
 
-$vcServer = "cvsvdivc01e.tadu.dcn"
+$vcServer = "VCENTER"
 $cluster = "VDI_Compute01"
 Write-Host "root creds"
 $esxCred = Get-Credential
