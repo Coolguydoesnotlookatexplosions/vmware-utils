@@ -31,10 +31,12 @@ $data = ForEach ($esxi in $esxihosts) {
 $myObject | select cHost,Service,Enabled |  epcsv $vcserver'_Results'.csv -not
 #$data | Export-Csv -NoTypeInformation 'hostSyslogStatusInfo.csv'
 
-
+#this is an experiment. Close out the connection even if things are good or not. Need to see if it works without "try"
+finally
+{
 #Disconnect from vCenter
 Disconnect-VIServer $vcServer -Confirm:$false | Out-Null
-
+}
 
 <#
 $myobject | Add-member -MemberType NoteProperty -Name 'NAME2' -Value  $esxiexample.name
